@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<!--FrontEnd Course - OK Coders -->
+<!--Programmer: Sharyl Hammer -->
+<!-- Date: December 14, 2018 -->
+<!--Instructor: Preston Schwartz -->
+<!--This lab combines all three files html, css and js files-->
+<!-- Using Bootstrap and application.css to form a calculator -->
+<!-- Uses the calculator.js file to calculate result value from calculator punched buttons. -->
+<!-- Uses a clear button to clear the input values at this time -->
+
+<head>
+  <title>Calculator</title>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/application.css" />
+  <script src="js/calculator.js"></script>
+
+</head>
+
+<body class="p-5 mb-5">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+        <!-- Sidebar Navigation-->
+        <div id="mySidenav" class="sidenav">
+           <!-- <a href="javascript:void(0)" class="closebtn" onclick ="closeNav()">&times;</a> -->
+           <a href="" class="closebtn" class="closeNav">&times;</a>
+           <a href="../home.html"><i class="fas fa-home"></i> Home</a>
+           <a href="./calc.html"><i class="fas fa-calculator"></i> Calculator</a>
+           <a href="../Hammer_Shopping_List/shopping.html"><i class="fas fa-shopping-cart"></i> Shopping List</a>
+        </div>
+         <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Portfolio</span> -->
+         <span style="font-size:30px;cursor:pointer" class="openNav">&#9776;Portfolio</span>
+
+
+
+        <!-- <a href="../home.html">Home</a> -->
+
+         <!-- <a href="https://www.w3schools.com/html/">Visit our HTML tutorial</a>  -->
+        <!-- <button class="mb-3 button back btn btn-outline-primary btn-sm">Home</button> -->
+      </div>
+      <div class="input-group input-group-sm col-sm-6 mb-2">
+        <!-- <input class="input password text-primary" type="password" placeholder="Password" /> -->
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
+
+     <!-- <button class="ml-5 button back btn btn-outline-primary btn-sm">Home</button> -->
+
+    <div class="row-fluid">
+
+      <div class="row">
+        <input class="input 1 bg-light mb-3" placeholder="" />
+
+        <!-- <input class="input 2 bg-light" placeholder="number2" /> -->
+
+
+        <!-- <p class="cal-val"></p> -->
+      </div>
+      <!-- <p>
+      The input values and operator buttons (+ - * / %) and CE are only functional at this time.
+      </p> -->
+      <div class="row-fluid">
+        <button class="num btn-info">7</button>
+        <button class="num btn-info">8</button>
+        <button class="num btn-info">9</button>
+        <button class="btn-operator operator btn-secondary">+</button>
+      </div>
+
+      <div class="row-fluid">
+        <button class="num btn-info">4</button>
+        <button class="num btn-info">5</button>
+        <button class="num btn-info">6</button>
+        <button class="btn-operator operator btn-secondary">-</button>
+      </div>
+
+      <div class="row-fluid">
+        <button class="num btn-info">1</button>
+        <button class="num btn-info">2</button>
+        <button class="num btn-info">3</button>
+        <button class="btn-operator operator btn-secondary">*</button>
+      </div>
+
+      <div class="row-fluid">
+        <button class="num btn-info">0</button>
+        <button class="num btn-muted">.</button>
+        <button class="btn-operator operator btn-secondary">%</button>
+        <button class="btn-operator operator btn-secondary">/</button>
+      </div>
+
+      <div class="row-fluid">
+        <button class="button clear operator btn-danger">CE</button>
+        <button class="btn-operator operator btn-secondary">=</button>
+      </div>
+    </div>
+   <!-- <p class="back">Home Page</p> -->
+
+  </div>
+
+</body>
+
+</html>

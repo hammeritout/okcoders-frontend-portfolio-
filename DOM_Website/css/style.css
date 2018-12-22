@@ -1,0 +1,167 @@
+body {
+  text-align: center;
+  font-family: "Lato", sans-serif;
+}
+
+.back_color {
+  background-image: url("../image/blue_green.jpg");
+}
+
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+ /* .jumbotron {
+  background-image: url("../image/chged_sharyl_rep.png");
+  background-size: cover;
+  height: 550px; */
+  /* height: 500px; */
+  /* width: 1099px; */
+  /* margin-top: -25px; */
+  /* margin-right: -200px; */
+  /* margin-left: 25px;
+  background-position: center;
+}  */
+
+.jumbotron {
+  background-image: url("../image/data.jpg");
+  background-size: cover;
+  height: 500px;
+  background-position: center;
+}
+
+.form {
+  display: inline-block;
+  margin-top: 150px;
+}
+
+.input-group placeholder {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+/* .header {
+  font-family: 'Lobster';
+
+} */
+.input-group input {
+  border-color: #007bff;
+  color: #007bff;
+}
+
+.access-denied {
+  display: none;
+}
+
+.logo {
+  margin-bottom: -35px;
+  margin-right: 120px;
+}
+
+/* .logo-name {
+
+  position: absolute;
+  right: 75%;
+  top: 65%;
+} */
+.rounded {
+  width: 100px;
+  height: 60px;
+  margin-right: 100px;
+  margin-bottom: -10px;
+}
+
+h1 {
+  /* color: #208CBC; */
+  color: black;
+  font-family: 'Lobster';
+}
+
+li {
+  list-style: none;
+}
+
+.logo-name {
+  width: 220px;
+  height: 50px;
+  margin-right: 81px;
+  margin-bottom: 15px;
+  font-size: 13px;
+  line-height: 1.4em;
+  color: brown;
+}
+
+.button {
+  border-radius: 12px;
+  margin: 4px 2px;
+  padding: 2px 35px 2px 35px;
+}
+
+.button .logout {
+  margin-right: 350px;
+  color: #00ffbf;
+}
+
+.list-group {
+  margin: auto;
+  float: left;
+  padding-top: 20px;
+}
+
+.lead {
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding-top: 10%;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -250px;
+  }
+
+  #sidebar.active {
+    margin-left: 0;
+  }
+}
