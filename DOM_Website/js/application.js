@@ -40,17 +40,21 @@ $(document).ready(() => {
     }
   }
   $('.button.logout').click(() => {
-    console.log('button logout is clicked');
+    // console.log('button logout is clicked');
     location.href = "login.html";
 
   });
 
+  // opens up the sidebar.
+
   $('.openNav').click(() => {
-      mySidenav.style.width = "250px";
+    mySidenav.style.width = "250px";
   });
 
+  // closes the sidebar.
+
   $('.closeNav').click(() => {
-      mySidenav.style.width = "0";
+    mySidenav.style.width = "0";
   });
-  
- });
+
+});

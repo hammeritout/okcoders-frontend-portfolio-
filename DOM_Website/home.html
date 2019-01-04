@@ -8,8 +8,41 @@
 <!-- Home page that is displayed -->
 
 
+<head>
+  <meta charset="utf-8">
+  <!--Mobile First view  -->
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Home Page</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+  <!DOCTYPE html>
+  <html lang="en" dir="ltr">
+  <!--FrontEnd Course - OK Coders -->
+  <!--Programmer: Sharyl Hammer -->
+  <!-- Date: December 14, 2018 -->
+  <!--Instructor: Preston Schwartz -->
+  <!--This lab combines all three files html, css and js files-->
+  <!-- Home page that is displayed -->
+
+
   <head>
     <meta charset="utf-8">
+    <!--Mobile First view  -->
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home Page</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -22,49 +55,107 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Molle" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Molle:400i" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/application.js"></script>
 
   </head>
-  <body class="back_color">
 
-    <div class="container">
+  <body>
+
+    <div class="container-fluid back_color">
       <div class="row p-3">
         <div class="input-group col-sm-3">
           <div class="logo">
-             <h1><img class="rounded rounded-circle" src="image/hammer_rlogo.jpg" alt="picture of logo"></h1>
-             <p class="logo-name text-center">Hammer2Design</p>
+            <h1><img class="rounded rounded-circle" src="image/test_bulb.jpg" alt="picture of logo"></h1>
+            <p class="logo-name text-center">Hammer2Design</p>
           </div>
 
-           <!-- Sidebar Navigation-->
-           <div id="mySidenav" class="sidenav">
-              <!-- <a href="javascript:void(0)" class="closebtn" onclick ="closeNav()">&times;</a> -->
-              <a href="" class="closebtn" class="closeNav">&times;</a>
-              <a href="./home.html"><i class="fas fa-home"></i> Home</a>
-              <a href="Hammer_Calculator_DOM/calc.html"><i class="fas fa-calculator"></i> Calculator</a>
-              <a href="Hammer_Shopping_List/shopping.html"><i class="fas fa-shopping-cart"></i> Shopping List</a>
-           </div>
-              <span style="font-size:30px;cursor:pointer" class="openNav">&#9776;Portfolio</span>
+          <!-- Sidebar Navigation-->
+          <div id="mySidenav" class="sidenav">
+            <!-- <a href="javascript:void(0)" class="closebtn" onclick ="closeNav()">&times;</a> -->
+            <a href="" class="closebtn" class="closeNav">&times;</a>
+            <a href="./home.html"><i class="fas fa-home"></i> Home</a>
+            <a href="Hammer_Calculator_DOM/calc.html"><i class="fas fa-calculator"></i> Calculator</a>
+            <a href="Hammer_Shopping_List/shopping.html"><i class="fas fa-shopping-cart"></i> Shopping List</a>
+            <a href="Hammer_Tip_Calculator/tip_calc.html"><i class="fas fa-calculator"></i> Tip Calculator</a>
+          </div>
+          <!-- <span style="font-size:30px;cursor:pointer" class="openNav">&#9776;Portfolio</span> -->
+          <span style="font-size:30px;cursor:pointer" class="openNav text-light">&#9776;Portfolio</span>
         </div>
 
         <div class="input-group col-sm-6 p-5">
-          <h1 class="header">Hammer 2 Design</h1>
+          <h1 class="text-center ml-3">Hammer 2 Design</h1>
         </div>
 
         <div class="col-sm-3">
-          <button class="m-3 button logout btn btn-outline-dark btn-sm">LOG OUT</button>
+          <button class="m-3 button logout btn btn-outline-warning btn-sm">LOG OUT</button>
         </div>
 
       </div>
     </div>
 
-      <div class="jumbotron">
+    <div class="jumbotron">
+    </div>
+
+
+
+
+
+  </body>
+
+  </html>
+
+  <link href="css/style.css" rel="stylesheet" />
+  <script src="js/application.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container-fluid back_color">
+    <div class="row p-3">
+      <div class="input-group col-sm-3">
+        <div class="logo">
+          <h1><img class="rounded rounded-circle" src="image/test_bulb.jpg" alt="picture of logo"></h1>
+          <p class="logo-name text-center">Hammer2Design</p>
+        </div>
+
+        <!-- Sidebar Navigation-->
+        <div id="mySidenav" class="sidenav">
+          <!-- <a href="javascript:void(0)" class="closebtn" onclick ="closeNav()">&times;</a> -->
+          <a href="" class="closebtn" class="closeNav">&times;</a>
+          <a href="./home.html"><i class="fas fa-home"></i> Home</a>
+          <a href="Hammer_Calculator_DOM/calc.html"><i class="fas fa-calculator"></i> Calculator</a>
+          <a href="Hammer_Shopping_List/shopping.html"><i class="fas fa-shopping-cart"></i> Shopping List</a>
+          <a href="Hammer_Tip_Calculator/tip_calc.html"><i class="fas fa-calculator"></i> Tip Calculator</a>
+        </div>
+        <!-- <span style="font-size:30px;cursor:pointer" class="openNav">&#9776;Portfolio</span> -->
+        <span style="font-size:30px;cursor:pointer" class="openNav text-light">&#9776;Portfolio</span>
       </div>
-    
+
+      <div class="input-group col-sm-6 p-5">
+        <h1 class="text-center ml-3">HAMMER 2 DESIGN</h1>
+      </div>
+
+      <div class="col-sm-3">
+        <button class="m-3 button logout btn btn-outline-warning btn-sm">LOG OUT</button>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="jumbotron">
+  </div>
+
 
 
 
 
 </body>
+
 </html>

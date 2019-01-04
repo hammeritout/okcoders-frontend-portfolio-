@@ -7,10 +7,13 @@
 <!--This lab combines all three files html, css and js files-->
 <!-- Using Bootstrap and application.css to form a shopping list -->
 <!-- The shopping list allows the user to add an item and a price for the item to a list. -->
-<!-- The add button adds the item to the list.  -->
+<!-- The add button adds the item to the list. The user is able to mark off the items on the list.  -->
+<!-- When the user marks off an item off the list and deletes the item the item total is re-calculated and displays the new total of the items of the list  -->
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Shopping List</title>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -19,85 +22,84 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noto+Serif" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento" rel="stylesheet">
   <link rel="stylesheet" href="./css/shopping.css" />
   <script src="js/shopping.js"></script>
 
 </head>
 
-<body class="body_color">
+<body class="p-3 mb-2">
   <div class="row">
-  <div class="col-sm-3">
-    <!-- Sidebar Navigation-->
-    <div id="mySidenav" class="sidenav">
-      <!-- <a href="javascript:void(0)" class="closebtn" onclick ="closeNav()">&times;</a> -->
-      <a href="" class="closebtn closeNav">&times;</a>
-      <a href="../home.html"><i class="fas fa-home"></i> Home</a>
-      <a href="../Hammer_Calculator_DOM/calc.html"><i class="fas fa-calculator"></i> Calculator</a>
-      <a href="./shopping.html"><i class="fas fa-shopping-cart"></i> Shopping List</a>
-    </div>
-    <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Portfolio</span> -->
-    <span style="font-size:30px;cursor:pointer" class="openNav">&#9776;Portfolio</span>
+    <div class="col-sm-3">
+      <!-- Sidebar Navigation-->
+      <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick ="closeNav()">&times;</a> -->
+        <a href="" class="closebtn closeNav">&times;</a>
+        <a href="../home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="../Hammer_Calculator_DOM/calc.html"><i class="fas fa-calculator"></i> Calculator</a>
+        <a href="./shopping.html"><i class="fas fa-shopping-cart"></i> Shopping List</a>
+        <a href="../Hammer_Tip_Calculator/tip_calc.html"><i class="fas fa-calculator"></i> Tip Calculator</a>
+      </div>
+      <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Portfolio</span> -->
+      <span style="font-size:30px;cursor:pointer" class="openNav">&#9776;Portfolio</span>
 
     </div>
-  <div class="input-group input-group-sm col-sm-6 mb-2">
-
-  </div>
-  <div class="col-sm-3">
-  </div>
-</div>
-
-  <nav class="navbar yellow_back mb-5">
-
-  <span class="navbar-text fas fa-shopping-cart">
-    <!-- <i class="fas fa-shopping-cart"></i> -->
-    My Shopping List
-  </span>
-</nav>
-
-
-  <div class="container">
-  <div class="row">
-    <div class="form-group col-sm-6">
-      <input class="form-control item" placeholder="Item" type="text">
-    </div>
-    <div class="form-group col-sm-5">
+    <div class="input-group input-group-sm col-sm-6 mb-2">
 
     </div>
-    <div class="col-sm-1">
-
+    <div class="col-sm-3">
     </div>
   </div>
-  <div class="row">
-    <div class="form-group col-sm-6">
-      <input class="form-control price" placeholder="Price" type="text">
+
+  <div class="p-3 mb-2 bg-secondary text-light card card-title card-responsive-sm">
+    <!-- <div class="p-3 mb-2 text-center card-title card-responsive-sm"> -->
+    <h1 class="ml-3 bg-secondary"><i class="fas fa-shopping-cart"></i> My Shopping List</h1>
+  </div>
+
+  <div class="container-fluid body_color">
+
+    <div class="row ">
+      <div class="form-group col-sm-6">
+        <input class="form-control item" placeholder="Item" type="text">
+      </div>
+      <div class="form-group col-sm-6">
+
+      </div>
     </div>
-    <div class="form-group col-sm-1">
-      <button class="btn btn-secondary btn-sm add-item-button">Add List Item</button>
+
+
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <input class="form-control price" placeholder="Price" type="text">
+      </div>
+      <div class="form-group col-sm-1">
+        <button class="btn btn-secondary btn-sm add-item-button">Add List Item</button>
+      </div>
+      <div class="col-sm-4">
+
+      </div>
     </div>
-    <div class="col-sm-4">
+    <div class="row yellow_back">
+      <div class="form-group col-sm-6">
+        <p class="shopping-list"></p>
+        <p class="total-val">Total Price</p>
+        <ul class="list-group">
+          <!--Build the list when user clicks button -->
+        </ul>
+      </div>
+      <div class="form-group col-sm-4">
+
+        <!-- <input class="form-control price" placeholder="Price" type="text"> -->
+
+      </div>
+      <div class="col-sm-2">
+
+      </div>
+
 
     </div>
   </div>
-  <div class="row">
-    <div class="form-group col-sm-6">
-      <p class="shopping-list"></p>
-      <p class="total-val">Total Price</p>
-      <ul class="list-group">
-        <!--Build the list when user clicks button -->
-      </ul>
-    </div>
-    <div class="form-group col-sm-4">
-
-      <!-- <input class="form-control price" placeholder="Price" type="text"> -->
-
-    </div>
-    <div class="col-sm-2">
-
-    </div>
-
-
-  </div>
-</div>
 
 </body>
 

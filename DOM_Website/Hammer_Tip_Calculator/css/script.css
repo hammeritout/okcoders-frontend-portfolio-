@@ -11,20 +11,21 @@ h1 {
   color: black;
   font-family: 'Noto+Serif';
 }
-
-.back_color {
-  background-image: url("../image/notebook_paper.jpg");
-}
 .body_color {
   background-image: url("../image/float_dollar.jpg");
 }
+
+.back_color {
+  background-color: #6ac7b9;
+  /* background-image: url("../image/background_green.jpg"); */
+}
+
 .yellow_back {
   background-image: url("../image/golden_background.jpg");
   color: black;
   font-family: 'Noto+Serif';
   font-size: 25px;
 }
-
 
 .sidenav {
   height: 100%;
@@ -68,42 +69,4 @@ h1 {
   .sidenav a {
     font-size: 18px;
   }
-}
-
-.input {
-  height: 32px;
-  font-size: 32px;
-  line-height: 35px;
-  width: 50%;
-}
-
-.total-val {
-  display: none;
-  height: 32px;
-  font-size: 32px;
-  line-height: 35px;
-  width: 50%;
-}
-
-.list-group {
-  display: none;
-}
-
-.list-group-item p{
-  color:red;
-}
-.input total {
-  display: none;
-}
-
-
-.button .back {
-  margin-left: 50px;
-  margin-bottom: 25px;
-}
-button.delete-item {
-	display: none;
-}
-button.mark-item {
-	display: none;
 }

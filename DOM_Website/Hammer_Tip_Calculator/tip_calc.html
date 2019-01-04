@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tip Calculator</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!-- Font Awesome JS -->
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="css/script.css" rel="stylesheet" />
+  <script src="js/tip_calc.js"></script>
+
+</head>
+
+<body>
+  <div class="row">
+    <div class="col-sm-3">
+      <!-- Sidebar Navigation-->
+      <div id="mySidenav" class="sidenav">
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick ="closeNav()">&times;</a> -->
+        <a href="" class="closebtn" class="closeNav">&times;</a>
+        <a href="../home.html"><i class="fas fa-home"></i> Home</a>
+        <a href="../Hammer_Calculator_Dom/calc.html"><i class="fas fa-calculator"></i> Calculator</a>
+        <a href="../Hammer_Shopping_List/shopping.html"><i class="fas fa-shopping-cart"></i> Shopping List</a>
+        <a href="./tip_calc.html"><i class="fas fa-calculator"></i> Tip Calculator</a>
+      </div>
+      <!-- <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;Portfolio</span> -->
+      <span style="font-size:30px;cursor:pointer" class="openNav">&#9776;Portfolio</span>
+
+    </div>
+
+    <div class="input-group input-group-sm col-sm-6 mb-2">
+      <!-- <input class="input password text-primary" type="password" placeholder="Password" /> -->
+    </div>
+    <div class="col-sm-3">
+
+    </div>
+  </div>
+
+  <div class="p-3 mb-2 bg-secondary text-light card card-title card-responsive-sm">
+    <!-- <div class="p-3 mb-2 text-center card-title card-responsive-sm"> -->
+    <h1 class="ml-3 bg-secondary"><i class="fas fa-calculator"></i> Tip Calculator</h1>
+  </div>
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="form-group col-sm-4">
+
+        <input class="form-control bill" placeholder="Total Bill" type="text">
+      </div>
+      <div class="form-group col-sm-8">
+
+
+      </div>
+    </div>
+    <!--  Dropdown Box Selection of Type of Service. -->
+    <div class="row">
+
+      <div class="col-sm-4">
+        <div class="form-group">
+          <label for="sel1">Select Service:</label>
+          <select class="form-control" id="sel1">
+            <option>Excellent</option>
+            <option>Good</option>
+            <option>Fair</option>
+            <option>Poor</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-sm-4 p-2 body_color">
+        <p class="tip-val p-2 text-center yellow_back"></p>
+      </div>
+      <div class="col-sm-4 ">
+        <!-- <p class="tip-val"></p> -->
+      </div>
+
+    </div>
+
+
+    <div class="row">
+      <div class="form-group col-sm-4">
+        <input class="form-control party-number" placeholder="Number of People to Split the Bill" type="text">
+      </div>
+      <div class="col-sm-8 p-1">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-4">
+        <button class="btn btn-secondary btn-sm calc-tip-button">Calculate Tip</button>
+        <button class="btn btn-secondary btn-sm clear-tip-button">Clear</button>
+      </div>
+      <div class="col-sm-4">
+        <!-- blank holding area -->
+        <!-- <button class="btn btn-secondary btn-sm clear-tip-button">Clear</button> -->
+      </div>
+      <div class="col-sm-4">
+        <!-- blank holding area"></ -->
+      </div>
+    </div>
+
+
+
+
+  </div>
+
+
+
+</body>
+
+</html>
